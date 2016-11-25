@@ -10,18 +10,32 @@ public class Address {
 
 
     public Address(int num, String str, int apnum, String ct, String st, int posc) {
-
+        houseNum = num;
+        streetName = str;
+        apartNum = apnum;
+        city = ct;
+        state = st;
+        postCode = posc;
     }
 
     public Address(int num, String str, String ct, String st, int posc) {
-
+        houseNum = num;
+        streetName = str;
+        city = ct;
+        state = st;
+        postCode = posc;
     }
 
     public void print() {
-
+        System.out.println(streetName);
+        System.out.println(city + "," + state + "," + postCode);
     }
 
     public boolean comesBefore(Address other) {
-
+        if (postCode < other.postCode) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
