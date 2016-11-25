@@ -6,8 +6,6 @@ package Week2;
 public class SaodaCanTester {
     public static void main(String[] args) {
         SaodaCan b = new SaodaCan(3, 5);
-        b.getSurfaceArea();
-        b.getVolume();
         System.out.println(b.getSurfaceArea());
         System.out.println(b.getVolume());
     }
